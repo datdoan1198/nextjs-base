@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+  /* Input */
+  .general-input{
+    @apply w-full;
+    &:focus, &:hover, &:focus-within{
+      @apply bg-gray-95 border-transparent outline-none shadow-none #{!important}
+    }
+    &.ant-input{
+      &:focus, &:hover, &:focus-within{
+        @apply border-transparent bg-gray-95 outline-none shadow-none #{!important}
+      }
+    }
+    .ant-input{
+      @apply bg-transparent text-black-20 #{!important}
+    }
+    @apply bg-gray-120 border-gray-120 text-black-20 py-2.5 px-5 rounded-[0.425rem] text-sm outline-none font-medium h-[44px]
+  }
+
+  .error-input {
+    @apply border-red-65 #{!important}
+  }
+
+  .input-wrap {
+    width: 100%;
+    margin-bottom: 15px;
+    .label-wrap {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 3px;
+      .required {
+        color: #ff4d4d;
+        font-weight: bold;
+      }
+    }
+    .error {
+      display: flex;
+      align-items: center;
+      color: #ff4d4d;
+      margin-top: 2px;
+      font-size: 14px;
+      .icon {
+        width: 14px;
+        margin-right: 3px;
+        img {
+          width: 14px!important;
+          max-width: 14px!important;
+        }
+      }
+    }
+  }
+
+  /* Button */
+  .general-button {
+    @apply  h-[44px] bg-blue-55 text-white rounded-[0.425rem] #{!important};
+    &:hover{
+      @apply bg-blue-65 #{!important}
+    }
+  }
+}

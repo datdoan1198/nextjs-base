@@ -1,0 +1,13 @@
+.layoutMainWrap {
+  max-width: 1920px;
+  margin: auto;
+  .mainWrap {
+    width: calc(100% - 265px);
+    margin-left: 265px;
+    height: 100vh;
+    .mainContentWrap {
+      height: calc(100vh - 74px);
+      padding: 20px;
+    }
+  }
+}

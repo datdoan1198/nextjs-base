@@ -1,0 +1,22 @@
+.sideBarWrap {
+  position: fixed;
+  width: 265px;
+  height: 100vh;
+  background: rgba(119, 111, 111, 0.68);
+  .headerWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+    background: #5a3824;
+  }
+  .navMenuWrap {
+    height: calc(100vh - 74px);
+    .navItemWrap {
+      padding: 10px;
+      &:hover {
+        background: #776f6f;
+      }
+    }
+  }
+}

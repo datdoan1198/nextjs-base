@@ -1,0 +1,12 @@
+.footerWrap {
+  width: 100vw;
+  min-height: 80px;
+  display: flex;
+  top: 0;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
+  position: fixed;
+  z-index: 99;
+}

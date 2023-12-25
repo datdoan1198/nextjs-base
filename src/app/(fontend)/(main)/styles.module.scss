@@ -1,0 +1,23 @@
+/* Layout */
+.mainWrap {
+  margin-top: 80px;
+  .mainContentWrap {
+    max-width: 1240px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px - 80px);
+  }
+}
+
+/* Page */
+.sectionProductWrap {
+  padding-top: 20px;
+  .productWrap {
+    min-height: 300px;
+    box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
